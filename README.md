@@ -1,4 +1,4 @@
-# Apps EMPLOYEE MANAGEMENT
+# Apps MEAN EMPLOYEE MANAGEMENT Ver1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
@@ -8,13 +8,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
    open your directory this folder app, and open cmd or git bash and write `npm install` to download all dependencies.
 
 2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-3. Run  `npm run server` or `json-server --watch db.json` for a json server for REST API in localhost for get 100> Dummy data
-if port is exsit / running you can run in another port. like this
-Run `json-server --watch db.json --port 3001`
-
-after run json server , you can open this link in web browser : http://localhost:3000/employees or http://localhost:3001/employees if you run in port 3001
-for front end apps you can open http://localhost:4200/
 
 4. Login in this apps.
 You can login by entering your username and password as you wish.
