@@ -13,12 +13,24 @@ declare var M: any;
 })
 
 export class EmployeeComponent implements OnInit {
+  disablebtn: boolean = true;
 
   constructor(public employeeService: EmployeeService) { }
 
   ngOnInit(): void {
     this.resetForm();
     this.refreshEmployeeList();
+  }
+
+  isValidForm(employeeForm) {
+    const id = document.getElementById('btn-sbmt');
+    if (!employeeForm.valid) {
+        id.style.cursor = 'not-allowed';
+        return this.disablebtn;
+    } else {
+       id.style.cursor = 'pointer';
+       return !this.disablebtn;
+    }
   }
 
   onSubmit(employeForm: NgForm) {
